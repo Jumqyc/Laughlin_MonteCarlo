@@ -19,11 +19,11 @@ python halperin_331.py         # two-species Halperin 331 state
 The code samples $|\psi|^2$ for an **arbitrary number of species** $T$ with a
 generic symmetric interaction matrix $K_{ab}$:
 
-$$\psi(\{z_i\}) = \prod_{i<j} (z_i - z_j)^{\,K_{t_i,\,t_j}} \; \exp\left(-\tfrac{1}{4}\sum_k |z_k|^2\right)$$
+$$\psi(\{z_i\}) = \prod_{i<j} (z_i - z_j)^{K_{t_i,t_j}} \; \exp\left(-\tfrac{1}{4}\sum_k |z_k|^2\right)$$
 
 
 $$|\psi|^2 \propto
-    \exp\left(-\tfrac{1}{2}\sum_k |z_k|^2\right) \;\prod_{i<j} |z_i - z_j|^{\,2K_{t_i,t_j}}$$
+    \exp\left(-\tfrac{1}{2}\sum_k |z_k|^2\right) \;\prod_{i<j} |z_i - z_j|^{2K_{t_i,t_j}}$$
 
 $t_i \in \{0, \dots, T-1\}$ labels the species of particle $i$.
 
