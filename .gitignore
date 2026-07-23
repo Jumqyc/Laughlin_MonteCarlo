@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# C++ build
+cpp/build/
+cpp/extern/pybind11/
+Laughlin.cpython-*.so
+
+# Output plots
+*.pdf
+*.png
+
+# Profiling
+callgrind.out.*
+annotate.txt
+profile.json
+profile2.json
+*.prof
+*.pstats
+
+# IDE
+.vscode/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
