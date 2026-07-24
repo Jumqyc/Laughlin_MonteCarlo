@@ -65,11 +65,11 @@ Laughlin(int_mat, particle_numbers, ptype_num, bdr, res)
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `int_mat` | `np.float32` array $(T \times T)$ | Interaction matrix.  The physical $K$ matrix; multiplied internally by 2 to give the correct $|\psi|^2$ weighting ($K_{ab}$ appears as $|z_i-z_j|^{2K_{ab}}$). |
+| `int_mat` | `np.float32` array $(T \times T)$ | Interaction matrix that labels topological order of Abelian FQHE |
 | `particle_numbers` | `np.int32` array $(T,)$ | Number of particles of each species. |
 | `ptype_num` | `int` | Number of species $T$. |
 | `bdr` | `float` | Box half‑width; coordinates $\in [-bdr, bdr]$. |
-| `res` | `float` | Spatial resolution; total bins = $2 \cdot bdr \,/\, res + 1$. |
+| `res` | `float` | Spatial resolution; total bins = $2 bdr / res + 1$. |
 
 ### Methods
 
@@ -110,8 +110,7 @@ in `cpp/extern/`.
 | File | Purpose |
 |------|---------|
 | `build.sh` | Build C++ module, copy `.so` to project root |
-| `run_cpp.py` | Single‑species density plots ($m=1,3,5$) |
-| `halperin_331.py` | Halperin 331 two‑species density + overlap |
 | `cpp/Laughlin.hpp` | C++ class declaration |
 | `cpp/Laughlin.cpp` | Metropolis update with pair‑distance cache |
 | `cpp/bind.cpp` | pybind11 Python bindings |
+| `demo.ipynb`| Some example usage
