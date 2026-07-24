@@ -226,7 +226,6 @@ void Laughlin::update(int i)
     }
 }
 
-// ── record ───────────────────────────────────────────────────────────
 void Laughlin::record(void)
 {
     for (int i = 0; i < n_tot; i++) {
@@ -238,7 +237,6 @@ void Laughlin::record(void)
     }
 }
 
-// ── run ──────────────────────────────────────────────────────────────
 void Laughlin::run(int steps)
 {
     for (int step = 0; step < steps; ++step) {

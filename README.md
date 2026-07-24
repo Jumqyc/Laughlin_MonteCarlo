@@ -10,9 +10,8 @@ $|\psi|^2$.
 python -m venv .venv && source .venv/bin/activate
 pip install numpy matplotlib
 ./build.sh
-python run_cpp.py              # single-species Laughlin  m = 1, 3, 5
-python halperin_331.py         # two-species Halperin 331 state
 ```
+Now the python modules are in the root folder and you can play with it in demo.ipynb.
 
 ## Physics
 
