@@ -13,6 +13,9 @@ Laughlin.cpython-*.so
 *.pdf
 *.png
 
+# Figures referenced by demo.ipynb (committed)
+!figures/*.png
+
 # Profiling
 callgrind.out.*
 annotate.txt
