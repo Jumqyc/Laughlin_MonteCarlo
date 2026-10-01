@@ -35,6 +35,26 @@ $t_i \in \{0, \dots, T-1\}$ labels the species of particle $i$.
   matrix $K$ defines a valid FQHE wavefunction, supporting $T$ distinct
   species with arbitrary mutual statistics.
 
+## Example results
+
+Real-space density profiles sampled by [`demo.ipynb`](demo.ipynb).
+
+**Laughlin states** ($\nu = 1/m$, $m = 1, 3, 5$)
+
+![Laughlin states](figures/laughlin.png)
+
+**Halperin 331** ($K_{AB} = 1$) — two interpenetrating species
+
+![Halperin 331](figures/halperin_331.png)
+
+**Harper 313** ($K_{AB} = 3$) — ring-like phase separation
+
+![Harper 313](figures/harper_313.png)
+
+**Quasihole** at $(2,0)$ with charge $p = 1$
+
+![Quasihole](figures/quasiholes.png)
+
 ## Python API
 
 ```python
